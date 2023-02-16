@@ -1,11 +1,12 @@
 <div class="form-wrapper">
-  <h1 class="app-title">Check password strength</h1>
+  <h1 class="app-title">Test password strength</h1>
+  <p>USENSE Test task. Maksym Zhovtaniuk</p>
   <form [formGroup]="reactiveForm">
     <input type="password" class="password-input" id="fpassword" placeholder="Password" formControlName="password">
     <ul class="validation-bars">
-      <li></li>
-      <li></li>
-      <li></li>
+      <li [ngStyle]="getColor()[0]"></li>
+      <li [ngStyle]="getColor()[1]"></li>
+      <li [ngStyle]="getColor()[2]"></li>
     </ul>
   </form>
 </div>
